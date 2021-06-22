@@ -1,0 +1,320 @@
+<!DOCTYPE html>
+<html lang="ru">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./css/style.min.css" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header class="header">
+      <div class="container">
+        <div class="header__inner">
+          <a
+            href="/"
+            aria-current="page"
+            class="header__logo router-link-exact-active router-link-active"
+            ><svg viewBox="0 0 170 35" fill="#fff">
+              <path
+                d="M71 35h.8V0H71zM6.6 22.9H1.2v-9.5c0-.3 0-.9-.6-.9s-.6.5-.6.9v9.5c0 .8.1.9 1 .9h5.6c.4 0 .8 0 .8-.5 0-.4-.4-.4-.8-.4M9 15.6c-.5 0-.5.4-.5.8v6.8c0 .4 0 .8.5.8s.5-.4.5-.8v-6.8c0-.3 0-.8-.5-.8M14.1 15.8H13v-.7c0-1 .1-1.7 1.4-1.7h.7c.3 0 .4-.2.4-.4 0 0 0-.2-.2-.3-.2-.1-.8-.2-1.3-.2-.3 0-.7.1-1 .3-.4.1-.6.4-.8.6-.1.2-.2.6-.2 1.5v.8h-.9c-.2 0-.7 0-.7.3 0 .4.5.4.7.4h.9v6.7c0 .5 0 .9.5.9s.5-.4.5-.8v-6.7h1.1c.4 0 .7-.1.7-.4 0-.3-.5-.3-.7-.3m-1-1.8M22.5 19.2s0-1-.5-1.9c-.3-.5-.7-.9-1.1-1.2-.1 0-.1-.1-.2-.1 0 0-.1 0-.1-.1-.1-.1-.2-.1-.4-.2h-.1c-.1 0-.3-.1-.4-.1h-.1c-.2 0-.3-.1-.5-.1h-.4c-1.2.1-2.2.5-2.9 1.2-.7.7-1 1.8-1 3.1 0 1.2.3 2.3 1 3 .3.4.7.7 1.2.9.5.2 1.1.3 1.7.3 1.5 0 2.4-.6 2.9-1.1.5-.6.7-1.2.7-1.3 0-.2-.2-.4-.5-.4-.2 0-.4.1-.5.3-.3.7-.7 1.2-1.3 1.5-.4.2-.8.3-1.2.3-.9 0-1.7-.3-2.2-.9-.5-.7-.7-1.5-.7-2.5h5.7c.5 0 .9 0 .9-.7zm-6.6-.1c.1-1 .9-2.7 2.8-2.7 2.4 0 2.6 2.1 2.7 2.7h-5.5zM27.8 12.5c-.6 0-.6.5-.6.9v9.7c0 .4 0 .9.6.9s.6-.5.6-.9v-9.7c0-.4 0-.9-.6-.9M46.8 18.4c.4 0 .6-.3.6-.6v-6.7h-1.2v6.7c0 .3.2.6.6.6M35.8 19.8c-.1 0-.2-.1-.2-.1h-.1c-.6-.3-1.2-.4-1.9-.5-.6-.1-1.2-.3-1.7-.5s-.7-.6-.7-1c0-.9 1.1-1.3 2.1-1.3 1.1 0 1.9.4 2.2 1.1.1.4.2.5.4.5.5 0 .5-.4.5-.4 0-.1-.1-.6-.5-1-.2-.3-.6-.5-1-.6-.5-.2-1.1-.3-1.7-.3-1.2 0-2 .3-2.6.9-.5.6-.5 1.2-.5 1.3 0 .6.3 1.1.8 1.5.5.3 1.1.5 2.1.7.3.1.6.1 1 .2.6.1 1.7.4 1.7 1.4 0 .8-.7 1.5-2.4 1.5-1.2 0-2-.5-2.4-1.3-.1-.3-.2-.5-.5-.5-.1 0-.2 0-.3.1-.1.1-.1.2-.1.3 0 .5.4 1.1.9 1.5.3.2.5.4.9.5.4.1 1 .2 1.6.2 1.3 0 2.3-.3 2.9-1 .5-.6.6-1.2.6-1.5-.1-.7-.4-1.3-1.1-1.7M60.2 16.4c-.4-.4-1.1-.9-2.3-.9-1.6 0-2.3.8-2.8 1.3v-.6c0-.2 0-.5-.1-.6h-.1c-.1 0-.2-.1-.3-.1-.5 0-.5.5-.5.8v6.8c0 .4 0 .8.5.8.1 0 .2 0 .3-.1h.1c.1-.1.1-.4.1-.6v-2.9c0-1.3 0-2 .3-2.5.2-.4.6-.8 1-1 .4-.2.9-.4 1.4-.4.7 0 1.3.3 1.7.8.3.4.4 1 .4 1.6v4.4c0 .2 0 .5.1.6h.1c.1.2.1.2.3.2.5 0 .5-.4.5-.8v-4.6c0-.5 0-1.5-.7-2.2"
+              ></path>
+              <path
+                d="M48.4 12.4v1.1c1.9.7 3.3 2.5 3.3 4.6 0 2.7-2.2 4.9-4.9 4.9s-4.9-2.2-4.9-4.9c0-2.1 1.3-3.9 3.2-4.6v-1.2c-2.5.7-4.3 3-4.3 5.7 0 3.3 2.7 6 6 6s6-2.7 6-6c0-2.6-1.8-4.9-4.4-5.6M9 13.4c-.4 0-.7.3-.7.6s.3.6.7.6c.4 0 .7-.3.7-.6s-.3-.6-.7-.6"
+              ></path>
+              <g>
+                <path
+                  d="M92 11.6c-2-.9-3.2-1.2-4.4-1.2-1.2 0-2 .4-2 1.1 0 2.1 7 1.5 7 6.3 0 2.7-2.2 4.2-5.3 4.2-2.4 0-3.6-.6-5-1.3v-3c2 1.3 3.2 1.8 4.7 1.8 1.3 0 2-.5 2-1.3 0-2.3-7-1.4-7-6.4 0-2.4 2.1-4 5.3-4 1.5 0 2.9.3 4.7 1.1v2.7zM101.9 21.4c-1.2.4-2.2.6-3.2.6-3.3 0-5.4-1.9-5.4-4.8 0-2.8 2.2-4.9 5.3-4.9.9 0 2.2.2 3.1.6v2.2c-.8-.4-1.7-.6-2.4-.6-1.8 0-2.9 1.1-2.9 2.7 0 1.7 1.1 2.7 2.8 2.7.7 0 1.3-.2 2.6-.6v2.1zM129.2 12.3c-2.9 0-4.9 2-4.9 4.9 0 2.9 2.1 4.8 5.4 4.8.7 0 2.5 0 4.2-1.2v-1.9c-1.4 1-2.3 1.3-3.4 1.3-1.8 0-3-1-3.1-2.6h6.6c.1-3.3-2.1-5.3-4.8-5.3zm-1.8 3.8c.1-1.3.9-2 2-2s1.9.8 2 2h-4zM135.1 21.8h3v-9.3h-3zM146.2 8v4.9c-.8-.4-1.6-.6-2.4-.6-2.7 0-4.5 2-4.5 4.8s1.8 4.8 4.3 4.8c1 0 1.8-.3 2.6-.9v.8h2.9V8h-2.9zm0 11.3c-.6.5-1.1.7-1.7.7-1.4 0-2.2-1.1-2.2-2.8 0-1.9.9-2.9 2.3-2.9.5 0 1.2.2 1.6.5v4.5zM155.3 12.3c-2.9 0-4.9 2-4.9 4.9 0 2.9 2.1 4.8 5.4 4.8.7 0 2.5 0 4.2-1.2v-1.9c-1.4 1-2.3 1.3-3.5 1.3-1.8 0-3-1-3.1-2.6h6.7c.1-3.3-2.1-5.3-4.8-5.3zm-1.8 3.8c.1-1.3.9-2 2-2s1.9.8 2 2h-4zM164.5 15.2c.9-1.9 1.9-2.9 3-2.9.6 0 1.1.2 1.9.9l-.8 2.6c-.8-.5-1.3-.7-1.7-.7-1.1 0-1.8 1-2.4 2.7v4h-2.9v-9.3h2.9v2.7zM138.2 8.6c.3.7-.2 1.7-1.1 2.3-.9.5-1.8.4-2.1-.4-.3-.7.2-1.7 1.1-2.3.9-.5 1.8-.4 2.1.4M112.4 15.9c0-2.5-1.7-3.6-3.4-3.6-1.2 0-2.1.5-2.9 1.6V8h-2.9v13.8h2.8v-5.9c.7-1 1.3-1.4 2-1.4.9 0 1.5.6 1.5 2v3.3c1-.5 2-.8 2.9-.9v-3zM119.7 12.3c-1.2 0-2.1.4-3 1.5v-1.3h-2.9v6.3c1 .1 2.3.6 2.9 1.3v-4.3c.8-1.2 1.3-1.5 2-1.5.8 0 1.5.5 1.5 1.9v5.7h2.9v-6c0-2.8-1.9-3.6-3.4-3.6M124.7 24.5h-3.4v2.4h3.3v1h-3.3v2.5h3.5v1.1h-4.6v-8.1h4.5zM127.5 31.5h1.1v-8.1h-1.1zM132.3 29h3.7c0-2-.9-2.9-2.3-2.9-1.5 0-2.5 1.1-2.5 2.7 0 1.5.9 2.8 2.6 2.8.9 0 1.5-.2 2.1-.6v-1c-.6.4-1.2.6-1.8.6-1.1 0-1.7-.6-1.8-1.6m1.4-2c.7 0 1.2.5 1.2 1.3h-2.7c.2-.9.7-1.3 1.5-1.3M142.8 27.6c-.6-.4-1-.5-1.5-.5-1 0-1.6.7-1.6 1.8s.7 1.7 1.8 1.7c.4 0 .9-.1 1.4-.4v1c-.4.2-1 .3-1.6.3-1.6 0-2.7-1.1-2.7-2.6 0-1.7 1-2.9 2.6-2.9.6 0 1 .1 1.5.4v1.2zM147.5 26.2h1.7v.9h-1.7v2.7c0 .6.4.8.8.8s.8-.1 1.2-.4v1c-.4.2-.9.4-1.3.4-1.1 0-1.7-.7-1.7-1.7v-2.8h-.9V27l2-1.9v1.1zM153.2 26.2v1.2c.5-.9 1-1.3 1.5-1.3.4 0 .8.2 1.3.6l-.6.9c-.3-.3-.7-.5-1-.5-.7 0-1.3.7-1.3 1.6v2.8h-1v-5.3h1.1zM166.7 27.6c-.6-.4-1-.5-1.5-.5-1 0-1.6.7-1.6 1.8s.7 1.7 1.8 1.7c.4 0 .9-.1 1.4-.4v1c-.4.2-1 .3-1.6.3-1.6 0-2.7-1.1-2.7-2.6 0-1.7 1-2.9 2.6-2.9.6 0 1 .1 1.5.4v1.2zM158.8 31.5h1v-5.3h-1zM159.8 24.3c.1.3-.1.6-.4.8-.3.2-.6.1-.7-.1-.1-.3.1-.6.4-.8.3-.2.6-.2.7.1M113.9 26.9l.3-1.1h2.8c.4-1.7.1-3.2-.9-4.2-2-2-6.3-1.3-9.5 1.7-.5.5-.9 1-1.3 1.5h1.7l-.4 1.1h-2.1c-.2.4-.4.7-.5 1.1h2.5l-.4 1.1h-2.4c-.4 1.8-.1 3.4.9 4.4 2 2 6.3 1.3 9.5-1.7.6-.5 1-1.1 1.4-1.7h-2.2l.3-1.1h2.6c.2-.4.4-.7.5-1.1h-2.8zm-.7-2.2c-.2 0-.3 0-.3.1 0 0 0 .1-.1.1l-.9 3.5c-.2 1.2-1.7 2.5-3.7 2.5h-2.8l.5-1.8h1.8c.2 0 .3-.1.4-.2 0-.1.1-.1.1-.2l.7-3.1c.3-1.2 1.6-2.6 3.6-2.6h2.8l-.4 1.7h-1.7z"
+                ></path>
+              </g>
+            </svg>
+          </a>
+          <a href="#" class="header__exit">
+            Выход
+            <span class="header__exit-icon"
+              ><img src="/img/icons/ic_logout.svg" alt="" /></span
+          ></a>
+        </div>
+      </div>
+    </header>
+
+    <div class="page">
+      <div class="container">
+        <div class="select-panel-container">
+          <div class="bar page__bar">
+            <div class="bar__container">
+              <div class="select-panel-wrapper">
+                <div class="select-panel">
+                  <div class="select-panel__input-box">
+                    <div
+                      class="
+                        select-panel__search-icon
+                        select-panel__search-icon--search
+                      "
+                    ></div>
+                    <!---->
+                    <input
+                      type="text"
+                      placeholder="Укажите референс для поиска"
+                      class="select-panel__search"
+                    />
+                  </div>
+                  <button class="select-panel__search-btn">
+                    <span class="select-panel__icon-upload"></span>
+                    Поиск по списку
+                  </button>
+                  <div class="select-panel__list" style="display: none">
+                    <div
+                      class="select-panel__row select-panel__row--none-hover"
+                    >
+                      <div class="select-panel__find">
+                        Найдено <span>0</span>
+                      </div>
+                      <div class="select-panel__remove">Закрыть</div>
+                    </div>
+                    <div
+                      data-simplebar-auto-hide="false"
+                      class="select-panel__list-inner data-simplebar"
+                      data-simplebar="init"
+                    >
+                      <div class="simplebar-wrapper" style="margin: 0px">
+                        <div class="simplebar-height-auto-observer-wrapper">
+                          <div class="simplebar-height-auto-observer"></div>
+                        </div>
+                        <div class="simplebar-mask">
+                          <div
+                            class="simplebar-offset"
+                            style="right: 0px; bottom: 0px"
+                          >
+                            <div
+                              class="simplebar-content-wrapper"
+                              style="height: auto; overflow: hidden"
+                            >
+                              <div
+                                class="simplebar-content"
+                                style="padding: 0px"
+                              ></div>
+                            </div>
+                          </div>
+                        </div>
+                        <div
+                          class="simplebar-placeholder"
+                          style="width: 0px; height: 0px"
+                        ></div>
+                      </div>
+                      <div
+                        class="simplebar-track simplebar-horizontal"
+                        style="visibility: hidden"
+                      >
+                        <div
+                          class="simplebar-scrollbar simplebar-visible"
+                          style="width: 0px; display: none"
+                        ></div>
+                      </div>
+                      <div
+                        class="simplebar-track simplebar-vertical"
+                        style="visibility: hidden"
+                      >
+                        <div
+                          class="simplebar-scrollbar simplebar-visible"
+                          style="height: 0px; display: none"
+                        ></div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <!---->
+              </div>
+            </div>
+            <div class="bar__nav">
+              <button disabled="disabled" class="bar__btn bar__btn--disabled">
+                <div class="bar__btn-icon bar__btn-icon--upload"></div>
+                Экспорт в Excel
+              </button>
+              <button disabled="disabled" class="bar__btn bar__btn--disabled">
+                <div class="bar__btn-icon bar__btn-icon--upload"></div>
+                Экспорт в PDF
+              </button>
+              <button disabled="disabled" class="bar__btn bar__btn--disabled">
+                <div class="bar__btn-icon bar__btn-icon--mail"></div>
+                Отправить на E-mail
+              </button>
+            </div>
+          </div>
+          <!---->
+        </div>
+
+        <div class="bar">
+          <a href="#" class="add-btn mt">
+            Добавить через селектор-конфигуратор
+          </a>
+
+          <div class="city-select">
+            <p class="city-select__title">Наличие на складах</p>
+            <div class="city-select__items">
+              <div class="city-select__item inactive">Все</div>
+              <div class="city-select__item active">Москва (Лобня)</div>
+              <div class="city-select__item">Екатеринбург</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="accordion">
+          <div class="accordion__header">
+            <a href="#" class="accordion__refresh refresh-btn">
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 22 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M19.6603 16C16.8988 20.7831 10.7831 22.4217 6.00002 19.6602C1.21697 16.8987 -0.421731 10.7831 2.33977 5.99999C5.10127 1.21694 11.217 -0.421761 16 2.33974C20.7831 5.10124 22.4218 11.2169 19.6603 16ZM17.806 9.36375C17.4187 7.74629 16.4681 6.31958 15.1246 5.33921C13.7811 4.35883 12.1324 3.88886 10.4739 4.01348C8.8154 4.1381 7.25545 4.84917 6.07353 6.01931C4.8916 7.18945 4.16493 8.74219 4.02369 10.3994L6.03106 10.4325C6.12512 9.60814 6.42284 8.82017 6.89737 8.13958C7.3719 7.459 8.00834 6.9072 8.74932 6.53392C9.49029 6.16064 10.3125 5.97762 11.1419 6.00135C11.9712 6.02508 12.7816 6.25482 13.5 6.66987L12 9.26794L17.806 9.36375ZM17.9764 11.6006L15.969 11.5675C15.8749 12.3918 15.5772 13.1798 15.1027 13.8604C14.6281 14.541 13.9917 15.0928 13.2507 15.4661C12.5098 15.8393 11.6875 16.0224 10.8582 15.9986C10.0288 15.9749 9.21844 15.7452 8.50002 15.3301L10 12.732L4.19408 12.6362C4.58137 14.2537 5.53192 15.6804 6.87544 16.6608C8.21895 17.6412 9.86764 18.1111 11.5261 17.9865C13.1847 17.8619 14.7446 17.1508 15.9265 15.9807C17.1084 14.8105 17.8351 13.2578 17.9764 11.6006Z"
+                  fill="#52CE5F"
+                />
+              </svg>
+            </a>
+            <p class="accordion__name">
+              Обнаружены референсы снятые с производства
+            </p>
+            <a href="#" class="accordion__close close-btn">
+              <svg
+                width="20"
+                height="20"
+                viewBox="0 0 20 20"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  opacity="0.15"
+                  d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 8.586L7.172 5.757L5.757 7.172L8.586 10L5.757 12.828L7.172 14.243L10 11.414L12.828 14.243L14.243 12.828L11.414 10L14.243 7.172L12.828 5.757L10 8.586Z"
+                  fill="#161A16"
+                />
+              </svg>
+            </a>
+          </div>
+
+          <div class="accordion__body">
+            <div class="accordion__body_title">
+              Требуют выбора замененных референсов
+            </div>
+            <p class="accordion__text">
+              Указанный референс был снят с производства и может быть заменен
+              одним или несколькими аналогами. Выберите в таблице ниже
+              подобранные аналоги или удалите найденные значения
+            </p>
+
+            <div class="accordion-table">
+              <div class="accordion-table__head">
+                <div class="accordion-table__ref">Указанный референс</div>
+                <div class="accordion-table__analog">Подобранные аналоги</div>
+              </div>
+
+              <div class="accordion-table__body">
+                <div class="accordion-table__row">
+                  <div class="accordion-table__ref-mob">Указанный референс</div>
+                  <div class="accordion-table__ref">
+                    ABL8FUS01 <span>(4 шт.)</span>
+                  </div>
+                  <div class="accordion-table__analog-mob">
+                    Подобранные аналоги
+                  </div>
+                  <div class="accordion-table__analog">
+                    <div class="accordion-table__analog_item active">
+                      ABL8FUS02 <span>(8 шт.)</span>
+                    </div>
+                    <div class="accordion-table__analog_item">ABL8FUS03</div>
+                    <div class="accordion-table__analog_item">ABL8FUS04</div>
+                  </div>
+                  <a href="#" class="accordion-table__close close-btn">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.15"
+                        d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 8.586L7.172 5.757L5.757 7.172L8.586 10L5.757 12.828L7.172 14.243L10 11.414L12.828 14.243L14.243 12.828L11.414 10L14.243 7.172L12.828 5.757L10 8.586Z"
+                        fill="#161A16"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="accordion-table__row">
+                  <div class="accordion-table__ref-mob">Указанный референс</div>
+
+                  <div class="accordion-table__ref">
+                    ABL8FUS01 <span>(4 шт.)</span>
+                  </div>
+                  <div class="accordion-table__analog-mob">
+                    Подобранные аналоги
+                  </div>
+                  <div class="accordion-table__analog">
+                    <div class="accordion-table__analog_item active">
+                      ERL8FUS02
+                    </div>
+                  </div>
+                  <a href="#" class="accordion-table__close close-btn">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.15"
+                        d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 8.586L7.172 5.757L5.757 7.172L8.586 10L5.757 12.828L7.172 14.243L10 11.414L12.828 14.243L14.243 12.828L11.414 10L14.243 7.172L12.828 5.757L10 8.586Z"
+                        fill="#161A16"
+                      />
+                    </svg>
+                  </a>
+                </div>
+
+                <div class="accordion-table__row">
+                  <div class="accordion-table__ref-mob">Указанный референс</div>
+
+                  <div class="accordion-table__ref">
+                    ABL8FUS01 <span>(4 шт.)</span>
+                  </div>
+                  <div class="accordion-table__analog-mob">
+                    Подобранные аналоги
+                  </div>
+                  <div class="accordion-table__analog">
+                    <div class="accordion-table__analog_item active">
+                      OSL8FUS02
+                    </div>
+                  </div>
+                  <a href="#" class="accordion-table__close close-btn">
+                    <svg
+                      width="20"
+                      height="20"
+                      viewBox="0 0 20 20"
+                      fill="none"
+                      xmlns="http://www.w3.org/2000/svg"
+                    >
+                      <path
+                        opacity="0.15"
+                        d="M10 20C4.477 20 0 15.523 0 10C0 4.477 4.477 0 10 0C15.523 0 20 4.477 20 10C20 15.523 15.523 20 10 20ZM10 8.586L7.172 5.757L5.757 7.172L8.586 10L5.757 12.828L7.172 14.243L10 11.414L12.828 14.243L14.243 12.828L11.414 10L14.243 7.172L12.828 5.757L10 8.586Z"
+                        fill="#161A16"
+                      />
+                    </svg>
+                  </a>
+                </div>
+              </div>
+
+              <div class="accordion-table__showmore">
+                <a href="#">Развернуть <span>(6)</span></a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="js/main.js"></script>
+  </body>
+</html>
